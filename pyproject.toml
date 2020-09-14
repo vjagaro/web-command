@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "web-command"
+version = "0.1.0"
+description = "Output a command to a web browser."
+authors = ["Jāgaro <v.jagaro@gmail.com>"]
+license = "ISC"
+readme = "README.md"
+include = [
+    "web_command/static/web-command.css",
+    "web_command/static/web-command.js"
+]
+repository = "https://github.com/vjagaro/web-command"
+
+[tool.poetry.dependencies]
+python = "^3.5.3"
+aiohttp = "^3.0"
+ansicolors = "^1.0"
+ptyprocess = "^0.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+web-command = "web_command.console:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

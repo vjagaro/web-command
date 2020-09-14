@@ -1,0 +1,10 @@
+/.cache
+/attic
+/build
+/dist
+/node_modules
+/web_command/static/web-command.js
+/web_command/static/web-command.css
+*.egg-info
+*.sw*
+__pycache__

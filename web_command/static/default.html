@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web Command Server</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="web-command.css">
+        <style>
+            body {
+              margin: 0;
+            }
+            #terminal {
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="terminal"></div>
+        <script src="web-command.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                const node = document.getElementById('terminal');
+                attachWebCommandConsole(node);
+            });
+        </script>
+    </body>
+</html>
